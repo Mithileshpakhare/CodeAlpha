@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="gallery-container" aria-label="Image Gallery">
+        <h1>Image Gallery</h1>
+        <div class="gallery">
+            <img id="mainImage" src="images/phone1.jpg" alt="Gallery Image">
+        </div>
+        <div class="thumbnails" aria-label="Thumbnail Images">
+            <img src="images/phone1.jpg" alt="Phone 1" onclick="showImage('images/phone1.jpg')">
+            <img src="images/phone2.jpg" alt="Phone 2" onclick="showImage('images/phone2.jpg')">
+            <img src="images/phone3.jpg" alt="Phone 3" onclick="showImage('images/phone3.jpg')">
+            <img src="images/phone4.jpg" alt="Phone 4" onclick="showImage('images/phone4.jpg')">
+        </div>
+        <div class="navigation">
+            <button id="prevBtn" aria-label="Previous Image">Previous</button>
+            <button id="nextBtn" aria-label="Next Image">Next</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
